@@ -1,9 +1,8 @@
 #!/usr/bin/python
 
-import commands
 import cgi
 import cgitb
-
+import commands
 cgitb.enable()
 
 print "Content-Type:text/html"
