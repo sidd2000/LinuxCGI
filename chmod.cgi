@@ -19,6 +19,13 @@ if(what=='add'):
 	com=who+'+'+which
 if(what=='remove'):
 	com=who+'-'+which
-
+print "<pre>"
 print commands.getoutput("sudo chmod "+com+' '+file)
 
+
+print "</pre>"
+print "\n \n"
+
+print '<a href="/linuxGUI/home.html">'
+print 'Back to Home Page'
+print '</a>'

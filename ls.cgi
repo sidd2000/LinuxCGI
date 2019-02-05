@@ -11,12 +11,15 @@ print ""
 mypage_data=cgi.FieldStorage()
 directory=mypage_data.getvalue('directory')
 
-print "<pre>"
-print commands.getoutput('sudo mkdir -p '+directory)
+if directory is None:
+	directory=' '
 
+print "<pre>"
+print commands.getoutput('ls -l '+directory)
 print "</pre>"
+
 print "\n \n"
 
 print '<a href="/linuxGUI/home.html">'
 print 'Back to Home Page'
-print '</a>'                                  
+print '</a>'

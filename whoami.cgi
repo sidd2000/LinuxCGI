@@ -12,9 +12,14 @@ mypage_data=cgi.FieldStorage()
 
 com=mypage_data.getvalue('check')
 
-
+print "<pre>"
 print commands.getoutput(com)
+print "</pre>"
+print "\n \n"
 
+print '<a href="/linuxGUI/home.html">'
+print 'Back to Home Page'
+print '</a>'
 
 
 

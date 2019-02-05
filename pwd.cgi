@@ -1,4 +1,5 @@
 #!/usr/bin/python
+
 import commands
 import cgi
 import cgitb    #traceback errors on browser
@@ -10,7 +11,12 @@ print ""
 
 mypage_data=cgi.FieldStorage()
 
-
+print "<pre>"
 print commands.getoutput('pwd')
-
+print "</pre>"
+print "\n \n"
+ 
+print '<a href="/linuxGUI/home.html">'
+print 'Back to Home Page'
+print '</a>'
 

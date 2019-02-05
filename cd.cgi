@@ -10,8 +10,12 @@ print ""
 
 mypage_data=cgi.FieldStorage()
 dir=mypage_data.getvalue('directory')
-
+print "<pre>"
 print commands.getoutput('cd '+dir)
 
+print "</pre>"
+print "\n \n"
 
-
+print '<a href="/linuxGUI/home.html">'
+print 'Back to Home Page'
+print '</a>'

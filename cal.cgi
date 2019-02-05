@@ -19,7 +19,12 @@ if month is None:
         month=' '
 if year is None:
         year=' '
-
+print "<pre>"
 print commands.getoutput("cal "+month+" "+year)
-print month
-print year
+
+print "</pre>"
+print "\n \n"
+
+print '<a href="/linuxGUI/home.html">'
+print 'Back to Home Page'
+print '</a>'
